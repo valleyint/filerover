@@ -42,24 +42,8 @@ A powerful, command-driven terminal file manager built with Go and the Bubble Te
 - **Scroll indicators** - shows when there are more files above/below
 - **Dynamic help text** - different instructions for normal and navigation modes
 
-## 📦 Installation
-
 ### Prerequisites
 - Go 1.19 or later
-- Linux/macOS/Windows terminal
-
-### Build from Source
-```bash
-git clone <repository-url>
-cd filerover
-go mod tidy
-go build -o rover main.go
-```
-
-### Run
-```bash
-./rover
-```
 
 ## 🎮 Controls
 
@@ -139,27 +123,6 @@ head -n 20 largefile.txt
 4. Press `→` to enter a directory
 5. Press `ESC` to exit navigation mode
 
-## 🛠️ Technical Details
-
-### **Architecture**
-- Built with [Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI framework
-- Uses [Lip Gloss](https://github.com/charmbracelet/lipgloss) for styling
-- Command execution via `os/exec` package
-- Real-time file system monitoring
-
-### **File Structure**
-```
-filerover/
-├── main.go          # Main application code
-├── go.mod           # Go module definition
-├── go.sum           # Dependency checksums
-└── README.md        # This file
-```
-
-### **Dependencies**
-- `github.com/charmbracelet/bubbletea` - TUI framework
-- `github.com/charmbracelet/lipgloss` - Styling library
-
 ## 🎯 Design Philosophy
 
 FileRover is designed to be:
@@ -172,16 +135,6 @@ FileRover is designed to be:
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
-
-### **Development Setup**
-```bash
-git clone <repository-url>
-cd filerover
-go mod tidy
-go run main.go
-```
-
-## 📄 License
 
 This project is open source. Please check the license file for details.
 
